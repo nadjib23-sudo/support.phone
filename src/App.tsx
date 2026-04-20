@@ -133,8 +133,8 @@ export default function App() {
               
               <div className="flex items-center gap-4">
                 <div className="text-3xl font-black text-slate-900">1200 دج</div>
-                <div className="text-lg text-slate-400 line-through">2500 دج</div>
-                <div className="bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">وفر 1300 دج</div>
+                <div className="text-lg text-slate-400 line-through">1500 دج</div>
+                <div className="bg-red-500 text-white text-xs font-bold px-2 py-1 rounded"> </div>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
