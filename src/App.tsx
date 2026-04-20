@@ -85,7 +85,7 @@ export default function App() {
 
   const openWhatsApp = () => {
     const message = `طلب جديد:\nالمنتج: حامل هاتف مغناطيسي ذكي\nالكمية: ${formData.quantity}\nالاسم: ${formData.name}\nالهاتف: ${formData.phone}\nالعنوان: ${formData.address}\nالمدينة: ${formData.city}`;
-    const whatsappUrl = `https://wa.me/213555555555?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/213664603307?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
@@ -171,7 +171,7 @@ export default function App() {
             >
               <div className="relative z-10 rounded-[2.5rem] overflow-hidden shadow-2xl shadow-slate-200 border-8 border-white">
                 <img 
-                  src="https://picsum.photos/seed/magnetic-phone-mount/800/800" 
+                  src="product.jpg" 
                   alt="Magnetic Car Phone Holder" 
                   className="w-full aspect-square object-cover"
                   referrerPolicy="no-referrer"
