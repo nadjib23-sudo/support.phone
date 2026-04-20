@@ -171,7 +171,7 @@ export default function App() {
             >
               <div className="relative z-10 rounded-[2.5rem] overflow-hidden shadow-2xl shadow-slate-200 border-8 border-white">
                 <img
-                     src={productImg}
+                     src="/product.jpg"
                      alt="Magnetic Car Phone Holder"
                       className="w-full aspect-square object-cover"
                        referrerPolicy="no-referrer"
