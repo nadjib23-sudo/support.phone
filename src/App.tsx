@@ -51,13 +51,35 @@ export default function App() {
     if (validate()) {
       setIsSubmitting(true);
       
-      // Simulate API call or data logging
-      console.log('Order received:', formData);
-      
-      setTimeout(() => {
+      // Google Sheets Integration
+      // Replace with your Apps Script Web App URL
+      const GOOGLE_SHEET_URL = ''; 
+
+      const sendToSheet = async () => {
+        if (!GOOGLE_SHEET_URL) {
+          console.warn('Google Sheet URL is not set.');
+          return;
+        }
+
+        try {
+          await fetch(GOOGLE_SHEET_URL, {
+            method: 'POST',
+            mode: 'no-cors', // Apps Script requires no-cors for simple requests without pre-flight
+            cache: 'no-cache',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+          });
+        } catch (error) {
+          console.error('Error sending to Google Sheets:', error);
+        }
+      };
+
+      sendToSheet().finally(() => {
         setIsSubmitting(false);
         setShowSuccess(true);
-      }, 800);
+      });
     }
   };
 
