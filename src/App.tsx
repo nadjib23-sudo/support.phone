@@ -17,7 +17,7 @@ import {
   ArrowRight,
   Star
 } from 'lucide-react';
-import productImg from "./product.jpg";
+
 export default function App() {
   const [formData, setFormData] = useState({
     name: '',
