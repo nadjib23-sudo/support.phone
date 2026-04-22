@@ -379,7 +379,7 @@ export default function App() {
               </div>
               <h3 className="text-2xl font-black text-slate-900 mb-2">تم استلام طلبك بنجاح!</h3>
               <p className="text-slate-600 mb-8 leading-relaxed">
-                شكراً لثقتك بنا. اضغط على الزر أدناه لإرسال طلبك عبر الواتساب لتسريع عملية التأكيد.
+                شكراً. اضغط على الزر أدناه لإرسال طلبك عبر الواتساب لتسريع عملية التأكيد.
               </p>
               <div className="space-y-3">
                 <button 
