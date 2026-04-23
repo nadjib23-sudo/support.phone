@@ -419,6 +419,8 @@ export default function App() {
           <ArrowRight className="w-4 h-4 rotate-180" />
         </button>
       </div>
-    </div>
+     </div>
   );
-}
+};
+
+export default App;
